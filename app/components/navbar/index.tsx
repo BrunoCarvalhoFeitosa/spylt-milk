@@ -32,14 +32,14 @@ export const Navbar = () => {
     })
 
     gsap.set(buttonRef.current, {
-      backgroundColor: "transparent",
+      backgroundColor: "#523122",
       borderRadius: "9999px"
     })
 
     tlButton.current = gsap.timeline({ paused: true })
 
     tlButton.current.to(buttonRef.current, {
-      backgroundColor: "#fff",
+      backgroundColor: "#a26833",
       borderRadius: "9999px",
       duration: 0.35,
       ease: "power3.out",
@@ -165,12 +165,12 @@ export const Navbar = () => {
         <button
           ref={buttonRef}
           onClick={handleMenuOpen}
-          className="relative flex items-center justify-center w-12 h-12 bg-mid-brown rounded-full cursor-pointer"
+          className="relative flex items-center justify-center w-12 h-12 rounded-full cursor-pointer"
           aria-expanded={open}
           aria-label="Toggle menu"
         >
-          <div ref={line1Ref} className="absolute w-6 h-0.5 bg-black" />
-          <div ref={line2Ref} className="absolute w-6 h-0.5 bg-black" />
+          <div ref={line1Ref} className="absolute w-6 h-0.5 bg-milk" />
+          <div ref={line2Ref} className="absolute w-6 h-0.5 bg-milk" />
         </button>
         <div className="hidden md:block">
           <button className="py-3 px-7 bg-amber-400 rounded-full text-xl uppercase">

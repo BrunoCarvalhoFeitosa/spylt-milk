@@ -41,12 +41,8 @@ const nutrientListData = [
     amount: "500mg"
   },
   {
-    label: "Vitamin A",
+    label: "Vitamin",
     amount: "176mcg"
-  },
-  {
-    label: "Vitamin D",
-    amount: "5mcg"
   },
   {
     label: "Iron",

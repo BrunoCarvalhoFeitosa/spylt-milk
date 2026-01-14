@@ -173,7 +173,7 @@ body::-webkit-scrollbar {
     }
 
     .nutrition-box {
-      @apply absolute left-1/2 -translate-x-1/2 md:bottom-16 bottom-5 w-full md:px-0 px-5;
+      @apply absolute left-1/2 -translate-x-1/2 md:bottom-16 bottom-5 w-full md:px-0 px-4;
 
       .list-wrapper {
         @apply bg-[#fdebd2] rounded-full border-[.5vw] border-[#e8ddca] mx-auto max-w-7xl md:py-8 py-5 md:px-0 px-5 flex justify-between items-center;

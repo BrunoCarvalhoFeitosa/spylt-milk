@@ -21,7 +21,7 @@ export const Menu = () => {
               </li>
             ))}
           </ul>
-          <ul className="mt-5 flex items-center gap-4">
+          <ul className="mt-5 hidden md:flex items-center gap-4">
             <li className="font-paragraph">
               <Link href="https://www.youtube.com/@spyltmilk" target="_blank">
                 YouTube
