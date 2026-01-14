@@ -10,7 +10,7 @@ export const VideoPin = () => {
   })
 
   useGSAP(() => {
-    // if (!isMobile) {
+    if (!isMobile) {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".vd-pin-section",
@@ -25,7 +25,7 @@ export const VideoPin = () => {
         clipPath: "circle(100% at 50% 50%)",
         ease: "power1.inOut"
       })
-    // }
+    }
   })
 
   return (
@@ -33,7 +33,7 @@ export const VideoPin = () => {
         <div
           className="size-full video-box"
           style={{
-            clipPath: "circle(6% at 50% 50%)"
+            clipPath: isMobile ? "circle(100% at 50% 50%)" : "circle(6% at 50% 50%)"
           }}
         >
           <video

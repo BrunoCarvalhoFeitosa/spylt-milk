@@ -50,7 +50,7 @@ export const Footer = () => {
           <img
             src="/images/footer-drink.png"
             alt="Footer image"
-            className="absolute bottom object-contain"
+            className="absolute bottom-0 object-contain"
           />
         ) : (
           <video
@@ -58,7 +58,7 @@ export const Footer = () => {
             autoPlay={true}
             playsInline={true}
             muted={true}
-            className="absolute bottom object-contain mix-blend-lighten"
+            className="absolute bottom-0 object-contain mix-blend-lighten"
           />
         )}
         <div className="flex-center gap-5 relative md:mt-20 mt-5 z-10">
@@ -81,40 +81,7 @@ export const Footer = () => {
             />
           </div>
         </div>
-        <div className="mt-20 lg:mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between font-paragraph text-milk md:text-lg font-medium">
-          {/* <div className="flex items-center md:gap-10 gap-5">
-            <div>
-              <Link href="/">
-                <img
-                  src="/images/nav-logo.svg"
-                  alt="Logo"
-                />
-              </Link>
-            </div>
-            <div>
-              <p>
-                Chug Club
-              </p>
-              <p>
-                Student Marketing
-              </p>
-              <p>
-                Dairy Dealers
-              </p>
-            </div>
-            <div>
-              <p>
-                Company
-              </p>
-              <p>
-                Contacts
-              </p>
-              <p>
-                Tasty Talk
-              </p>
-            </div>
-          </div> */}
-        </div>
+        <div className="mt-20 lg:mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between font-paragraph text-milk md:text-lg font-medium" />
       </div>
     </footer>   
   )

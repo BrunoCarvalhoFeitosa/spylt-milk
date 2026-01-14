@@ -10,7 +10,7 @@ export const BenefitsSection = () => {
       delay: 1,
       scrollTrigger: {
         trigger: ".benefit-section",
-        start: "top 80%",
+        start: "top 60%",
         end: "top top",
         scrub: 1.5
       }
