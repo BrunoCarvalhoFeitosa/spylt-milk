@@ -1,13 +1,13 @@
 "use client"
 import { useRef } from "react"
-import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { useMediaQuery } from "react-responsive"
 import { SplitText } from "gsap/all"
 import { flavorListData } from "@/app/utils/constants"
-import { useMediaQuery } from "react-responsive"
 
 export const FlavorSection = () => {
-  const sliderRef = useRef(null)
+  const sliderRef = useRef<HTMLDivElement | null>(null)
 
   const isTablet = useMediaQuery({
     query: "(max-width: 1024px)"
@@ -53,7 +53,13 @@ export const FlavorSection = () => {
   })
 
   useGSAP(() => {
-    const scrollAmount = sliderRef?.current?.scrollWidth - window.innerWidth
+    const slider = sliderRef.current
+
+    if (!slider || typeof slider.scrollWidth !== "number") {
+      return
+    }
+
+    const scrollAmount = slider.scrollWidth - window.innerWidth
 
     if (!isTablet) {
       const tl = gsap.timeline({
