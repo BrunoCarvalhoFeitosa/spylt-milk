@@ -50,7 +50,7 @@ export const Footer = () => {
           <img
             src="/images/footer-drink.png"
             alt="Footer image"
-            className="absolute top-0 object-contain"
+            className="absolute bottom object-contain"
           />
         ) : (
           <video
@@ -58,7 +58,7 @@ export const Footer = () => {
             autoPlay={true}
             playsInline={true}
             muted={true}
-            className="absolute top-0 object-contain mix-blend-lighten"
+            className="absolute bottom object-contain mix-blend-lighten"
           />
         )}
         <div className="flex-center gap-5 relative md:mt-20 mt-5 z-10">
