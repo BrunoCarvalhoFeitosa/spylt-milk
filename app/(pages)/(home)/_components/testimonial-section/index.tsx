@@ -30,7 +30,7 @@ export const TestimonialSection = () => {
 
   useGSAP(() => {
     gsap.set(".testimonials-section", {
-      marginTop: isMobile ? "-100vh" : "-140vh"
+      marginTop: isMobile ? "0" : "-140vh"
     })
 
     const tl = gsap.timeline({
