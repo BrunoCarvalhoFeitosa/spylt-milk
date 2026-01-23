@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/BrunoCarvalhoFeitosa/jira">
+  <a href="https://github.com/BrunoCarvalhoFeitosa/spylt-milk">
     <img src="\public\images\hero-img.png" alt="Logo" width="200" weight="200" />
   </a>
   <p align="center">
